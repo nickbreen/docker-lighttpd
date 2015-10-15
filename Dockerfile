@@ -10,4 +10,5 @@ RUN lighttpd-enable-mod fastcgi php
 
 CMD ["lighttpd", "-D", "-f", "/etc/lighttpd/lighttpd.conf"]
 
+EXPOSE 80
 

@@ -1,5 +1,5 @@
 lighttpd:
-  image: nickbreen/lighttpd
+  build: .
   ports:
     - "8000:80"
   links:
@@ -10,5 +10,4 @@ lighttpd:
 php:
   image: php:fpm
   volumes:
-    - .:/var/www/html
-
+    - ./index.php:/var/www/index.php
